@@ -22,7 +22,10 @@ public class Fornecedor {
     private String endereco;
     private String telefone;
     private String email;
-    @OneToMany // se colocar ManyToOne da erro pq? a leitura é: um fornecedor para muitos peodutos nesse caso OneToMany? ?
+
+
+
+    /* @OneToMany // se colocar ManyToOne da erro pq? a leitura é: um fornecedor para muitos peodutos nesse caso OneToMany? ?
     @JoinColumn(name = "produto_id")// esse atributos produtos não deixaria menso performatico minha aplicação?
-    private List<Produto> produto;
+    private List<Produto> produto;*/
 }
