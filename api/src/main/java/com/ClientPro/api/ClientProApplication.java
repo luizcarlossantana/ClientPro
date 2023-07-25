@@ -1,13 +1,18 @@
 package com.ClientPro.api;
 
+import org.modelmapper.ModelMapper;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 public class ClientProApplication {
 
-	public static void main(String[] args) {
-		SpringApplication.run(ClientProApplication.class, args);
+	public static void main(String[] args) {SpringApplication.run(ClientProApplication.class, args);}
+
+	@Bean
+	public ModelMapper modelMapper(){
+		return new ModelMapper();
 	}
 
 }
