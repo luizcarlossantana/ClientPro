@@ -19,7 +19,7 @@ public class ClienteController {
 
     @PostMapping
     @ResponseStatus(HttpStatus.CREATED)
-    public ResponseEntity<ClienteDTO> criarCliente(@RequestBody ClienteDTO cliente){
+    public ResponseEntity<ClienteDTO> criarCliente(@RequestBody  ClienteDTO cliente){
 
         ClienteDTO clienteCriado = service.criar((cliente));
 

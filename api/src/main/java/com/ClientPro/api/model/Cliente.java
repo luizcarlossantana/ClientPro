@@ -21,12 +21,13 @@ public class Cliente {
     private Long id;
     @NotEmpty
     private String nome;
+    @NotEmpty
     @Email
     private String email;
-    private Long DataNascimento;
+    private Long dataNascimento;
     private String endereco;
 
     private String telefone;
-    private String CpfCnpj;
-    private EnumPessoaFisicaJuridica FisicaJuridica;
+    private String cpfCnpj;
+    private EnumPessoaFisicaJuridica fisicaJuridica;
 }
